@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 		<header class="main-header">
 			<div class="container">
-        <div class="shop-header-logo">
-          <img src="img/index-logo.png" width="111" height="24" alt="Барбершоп логотип">
-        </div>
 				<nav class="main-navigation">
+          <div class="shop-header-logo">
+            <a href="index.html"><img src="img/Logo-shop.png" width="111" height="24" alt="Барбершоп логотип"></a>
+          </div>
 					<ul>
 						<li>
 							<a href="#">Информация</a>
@@ -23,7 +23,7 @@
 							<a href="#">Прайс-лист</a>
 						</li>
 						<li>
-							<a href="#">Магазин</a>
+              <a href="catalog.html">Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -41,10 +41,10 @@
             <nav class="breadcrumbs">
               <ul>
                 <li>
-                  <a href="#">Главная</a>
+                  <a href="index.html">Главная</a>
                 </li>
                 <li>
-                  <a href="#">Магазин</a>
+                  <a href="catalog.html">Магазин</a>
                 </li>
                 <li>
                   <a href="#">Средства для ухода</a>
@@ -52,72 +52,90 @@
               </ul>
             </nav>
         </div>
-        <section class="shop-container-producers">
-        <form action="URL">
+        <section class="shop-container-item">
+        <form action="URL" method="get">
           <h2 class="shop-container-title">Производители:</h2>
-           <input type="checkbox" id="shop-container-producers-check1"><label for="shop-container-producers-check1">Baxter of California</label><Br> <!--[ВОПРОС] Что делать с подобными длинными id и class? -->
-           <input type="checkbox" id="shop-container-producers-check2"><label for="shop-container-producers-check2">Mr Natty</label><Br>
-           <input type="checkbox" id="shop-container-producers-check3"><label for="shop-container-producers-check3">Suavecito</label><Br>
-           <input type="checkbox" id="shop-container-producers-check4"><label for="shop-container-producers-check4">Malin+Goetz</label><Br>
-           <input type="checkbox" id="shop-container-producers-check5"><label for="shop-container-producers-check5">Dolor</label><Br>
-           <input type="checkbox" id="shop-container-producers-check6"><label for="shop-container-producers-check6">Sit amet</label><Br>
-        </form>
-        </section>
-        <section class="shop-container-group-goods">
-        <form action="URL">
+           <ul>
+             <li>
+               <input type="checkbox" id="shop-container-producers-check1"><label for="shop-container-producers-check1">Baxter of California</label><Br> <!--[ВОПРОС] Что делать с подобными длинными id и class? -->
+             </li>
+             <li>
+               <input type="checkbox" id="shop-container-producers-check2"><label for="shop-container-producers-check2">Mr Natty</label><Br>
+             </li>
+             <li>
+               <input type="checkbox" id="shop-container-producers-check3"><label for="shop-container-producers-check3">Suavecito</label><Br>
+             </li>
+             <li>
+               <input type="checkbox" id="shop-container-producers-check4"><label for="shop-container-producers-check4">Malin+Goetz</label><Br>
+             </li>
+             <li>
+               <input type="checkbox" id="shop-container-producers-check5"><label for="shop-container-producers-check5">Dolor</label><Br>
+             </li>
+             <li>
+               <input type="checkbox" id="shop-container-producers-check6"><label for="shop-container-producers-check6">Sit amet</label><Br>
+             </li>
+           </ul>
           <h2 class="shop-container-title">Группы товаров:</h2>
-           <input type="checkbox" id="shop-container-goods-check1"><label for="shop-container-goods-check1">Бритвенные принадлежности</label><Br>
-           <input type="checkbox" id="shop-container-goods-check2"><label for="shop-container-goods-check2">Средства для ухода</label><Br>
-           <input type="checkbox" id="shop-container-goods-check3"><label for="shop-container-goods-check3">Аксессуары</label><Br>
-           <button class="shop-container-btn" type="submit">Показать</button>
+            <ul>
+              <li>
+                <input type="radio" id="shop-container-goods-check1"><label for="shop-container-goods-check1">Бритвенные принадлежности</label><Br>
+              </li>
+              <li>
+                <input type="radio" id="shop-container-goods-check2"><label for="shop-container-goods-check2">Средства для ухода</label><Br>
+              </li>
+              <li>
+                <input type="radio" id="shop-container-goods-check3"><label for="shop-container-goods-check3">Аксессуары</label><Br>
+              </li>
+              </ul>
+              <button class="shop-container-btn" type="submit">Показать</button>
         </form>
         </section>
         <section class="shop-container-goods">
           <article class="shop-container-offer">
             <img src="img/good1.jpg" width="220" height="165" alt="Набор для путешествий Бакстер">
-            <p>Набор для путешествий <br>«BAXTER OF CALLIFORNIA»</p>
+            <h2><a href="#"><span class="product-category">Набор для путешествий</span> <br><span class="product-name">«BAXTER OF CALLIFORNIA»</span></a></h2>
             <div class="shop-container-buy">
-              <p>2 900 РУБ.</p>
+              <span class="buy">2 900 РУБ.</span>
               <a class="shop-container-buy-btn" href="#">КУПИТЬ</a>
             </div>
           </article>
           <article class="shop-container-offer">
             <img src="img/good2.jpg" width="220" height="165" alt="Увлажняющий кондиционер Бакстер">
-            <p>Увлажняющий кондиционер <br>«BAXTER OF CALLIFORNIA»</p>
+            <h2><a href="#"><span class="product-category">Увлажняющий кондиционер</span> <br><span class="product-name">«BAXTER OF CALLIFORNIA»</span></a></h2>
             <div class="shop-container-buy">
-              <p>750 РУБ.</p>
+              <span class="buy">750 РУБ.</span>
               <a class="shop-container-buy-btn" href="#">КУПИТЬ</a>
             </div>
           </article>
           <article class="shop-container-offer">
             <img src="img/good3.jpg" width="220" height="165" alt="Гель для волос Савесито">
-            <p>Гель для волос <br>«SUAVECITO»</p>
+            <h2><a href="#"><span class="product-category">Гель для волос</span> <br><span class="product-name">«SUAVECITO»</span></a></h2>
             <div class="shop-container-buy">
-              <p>290 РУБ.</p>
+              <span class="buy">290 РУБ.</span>
               <a class="shop-container-buy-btn" href="#">КУПИТЬ</a>
             </div>
           </article>
           <article class="shop-container-offer">
             <img src="img/good4.jpg" width="220" height="165" alt="Глина для укладки волос Американ Крю">
-            <p>Глина для укладки волос <br>«AMERICAN CREW»</p>
+            <h2><a href="#"><span class="product-category">Глина для укладки волос</span> <br><span class="product-name">«AMERICAN CREW»</span></a></h2>
             <div class="shop-container-buy">
-              <p>500 РУБ.</p>
+              <span class="buy">500 РУБ.</span>
               <a class="shop-container-buy-btn" href="#">КУПИТЬ</a>
             </div>
           </article>
           <article class="shop-container-offer">
             <img src="img/good5.jpg" width="220" height="165" alt="Гель для волос Американ Крю">
-            <p>Гель для волос <br>«AMERICAN CREW»</p>
+            <h2><a href="#"><span class="product-category">Гель для волос</span> <br><span class="product-name">«AMERICAN CREW»</span></a></h2>
             <div class="shop-container-buy">
-              <p>300 РУБ.</p>
+              <span class="buy">300 РУБ.</span>
               <a class="shop-container-buy-btn" href="#">КУПИТЬ</a>
             </div>
           </article>
           <article class="shop-container-offer">
             <img src="img/good6.jpg" width="220" height="165" alt="Набор для бритья Бакстер">
-            <p>Набор для бритья <br>«BAXTER OF CALLIFORNIA»</p>
+            <h2><a href="#"><span class="product-category">Набор для бритья</span> <br><span class="product-name">«BAXTER OF CALLIFORNIA»</span></a></h2>
             <div class="shop-container-buy">
-              <p>3 900 РУБ.</p>
+              <span class="buy">3 900 РУБ.</span>
               <a class="shop-container-buy-btn" href="#">КУПИТЬ</a>
             </div>
           </article>
