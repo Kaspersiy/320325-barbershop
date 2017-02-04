@@ -1,4 +1,4 @@
-.body
+body
 {
   font-size: 14px;
   line-height: 1.714;
@@ -7,7 +7,7 @@
   font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
 }
 
- .h1 .h2
+h1 h2
 {
   font-size: 30px;
   line-height: 1.4;
@@ -16,11 +16,512 @@
   font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
 }
 
-.h3
+h3
 {
   font-size: 24px;
   line-height: 1.25;
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header
+{
+  margin-bottom: 60px;
+}
+
+.main-header-container
+{
+  width: 940px;
+  min-height: 72px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+
+/*Только для оформления сетки*/
+  outline: 1px solid red;
+
+}
+
+.main-header-navigation
+{
+  float: left;
+  width: 780px;
+  min-height: 72px;
+  margin: 0 auto;
+  text-align: center;
+
+/*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.main-header-navigation li
+{
+  display: inline;
+  margin-right: 40px;
+}
+
+.user-block
+{
+  float: right;
+  width: 140px;
+  min-height: 72px;
+  margin: 0 auto;
+  text-align: center;
+
+/*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.shop-header-logo
+{
+  float: left;
+  margin: 0 auto;
+  margin-right: 40px;
+}
+
+.container
+{
+
+  width: 940px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*Только для оформления сетки*/
+    outline: 1px solid green;
+}
+
+
+/*Блок разметки Index.html*/
+.index-logo
+{
+  height: 204px;
+  width: 368px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  /*Только для оформления сетки*/
+    outline: 1px solid black;
+}
+
+.features
+{
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  /*Только для оформления сетки*/
+  outline: 1px solid grey;
+}
+
+.features-item
+{
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  text-align: center;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.features-item:nth-child(3)
+{
+  margin-right: 0px;
+}
+
+.index-content
+{
+  margin-bottom: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.index-content-left
+{
+  float: left;
+  width: 380px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.index-content-right
+{
+  float: right;
+  width: 300px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.gallery-content
+{
+  margin-left: 0px;     /*[ВОПРОС!  Гоша, это какая-то загадка. Почему-то без этого маргина картинка съезжает вправо. и ещё, ниже оутлайн короче картинки]
+  Сидел думал, разобрался - это из-за тега Figure, Если я ставлю DIV, то нормально все. Почему он так себя ведет, Гоша? */
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+/*Конец блока разметки Index.html*/
+/*Блок разметки Catalog.html*/
+.shop-container-header
+{
+  float:left;
+  width: 300px;
+  margin-top: -6px;  /* Таким образом убираю лишние 6px, которые образуются на разнице шрифта при вертикальном замере */
+  margin-bottom: 54px;  /* Таким образом убираю лишние 6px, которые образуются на разнице шрифта при вертикальном замере */
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.shop-title
+{
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.4;
+    /*Только для оформления сетки*/
+    outline: 1px solid brown;
+}
+
+.breadcrumbs ul
+{
+  margin-bottom: 0px;
+  padding: 0px;
+  font-size: 14px;
+    /*Только для оформления сетки*/
+    outline: 1px solid yellow;
+}
+
+.breadcrumbs li
+{
+  display: inline;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.breadcrumbs li:nth-child(1)
+{
+  margin-right: 39px;
+}
+
+.breadcrumbs li:last-child
+{
+  float: right;
+}
+
+.shop-container-item
+{
+  float:left;
+  clear: both;
+  width: 220px;
+  margin-right: 20px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.shop-container-title             /*Не удается вертикально выровнять в уровень с блоком справа "Набор для путешествий"!*/
+{
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 24px;
+  /*Только для оформления сетки*/
+  outline: 1px solid silver;
+}
+
+.shop-container-item ul
+{
+  margin-top: 33px;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style-type: none;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.shop-container-item li
+{
+  margin-bottom: 23px;
+  /*Только для оформления сетки*/
+  outline: 1px solid brown;
+}
+
+.shop-container-item li:last-child
+{
+  margin-bottom: 40px;
+}
+
+.shop-container-btn
+{
+  width: 112px;
+  height: 43px;
+  margin-top: 53px;
+
+  /*Только для оформления сетки*/
+  outline: 1px solid brown;
+}
+
+.shop-container-goods
+{
+  float:left;
+  width: 700px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.shop-container-offer
+{
+  float:left;
+  width: 220px;
+  height: 286px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.shop-container-offer h2
+{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.286;
+}
+
+.shop-container-buy
+{
+  float:left;
+  height: 43px;
+  width: 187px;
+  margin-left: 16px;
+  font-size: 14px;
+  /*Только для оформления сетки*/
+  outline: 3px solid green;
+}
+
+.buy                                /* ПОКА НЕ УДАЛОСЬ ВЫРОВНЯТЬ КНОПКУ ВНУТРИ! */
+{
+  float: left;
+  width: 109px;
+  height: 43px;
+  text-align: center;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.shop-container-buy-btn             /* ПОКА НЕ УДАЛОСЬ ВЫРОВНЯТЬ КНОПКУ ВНУТРИ! */
+{
+  float: right;;
+  width: 78px;
+  height: 43px;
+  text-align: center;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.shop-container-offer:nth-child(3n)
+{
+  margin-right: 0px;
+}
+
+.shop-container-goods-navigation
+{
+  float:left;
+  clear: both;
+  width: 220px;
+  margin-top: 45px;
+  padding: 0px;
+  font-size: 14px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.shop-container-goods-navigation ul
+{
+  padding: 0px;
+}
+
+.shop-container-goods-navigation li
+{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-right: 7px;
+  text-align: center;                            /*[Вопрос] Не могу выровнять по вертикали */
+  /*Только для оформления сетки*/
+  outline: 1px solid brown;
+}
+
+.shop-container-goods-navigation li:last-child
+{
+  margin-right: 0px;
+}
+
+/*Конец блока разметки Catalog.html*/
+/*Блок разметки catalog-item.html*/
+.item-container-header
+{
+  float:left;
+  width: 620px;
+  margin-top: -6px;  /* Таким образом убираю лишние 6px, которые образуются на разнице шрифта при вертикальном замере */
+  margin-bottom: 55px;  /* Таким образом убираю лишние 6px, которые образуются на разнице шрифта при вертикальном замере */
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.item-container-header .breadcrumbs li:nth-child(2)
+{
+  margin-right: 45px;
+}
+
+.item-goods
+{
+  float: left;
+  width: 460px;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.item-goods img:nth-child(2)
+{
+  float: left;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.item-goods img:nth-child(3)
+{
+  margin-left: 20px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.item-goods img:last-child
+{
+  float: right;
+  margin-bottom: 50px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.item-goods-description
+{
+  float: right;
+  margin-top: 26px;
+  width: 390px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  /*Только для оформления сетки*/
+  outline: 1px solid gray;
+}
+
+.articul > p                                   /* Не правильно выравнимается, так как остаётся лишний отступ в блоке сверху, который я не знаю как убрать */
+{
+  float: right;
+  margin: 0 auto;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.status > p
+{
+  float: left;
+  margin: 0 auto;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.item-goods-description > p
+{
+  float: left;
+  margin-top: 29px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.item-goods-description > .shop-container-buy
+{
+  margin-top: 38px;
+}
+
+.item-goods-description > h3
+{
+  float: left;
+  clear: left;
+  margin-top: 66px;
+  margin-bottom: 0px;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.item-goods-description > ul
+{
+  float: left;
+  clear: left;
+  margin-top: 33px;
+  padding-left: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  list-style-position:inside;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+
+
+/*Конец блока разметки catalog-item.html*/
+
+.main-footer
+{
+  margin-top: 65px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.714;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.footer-contacts
+{
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.footer-social
+{
+  float: left;
+  width: 180px;
+
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.footer-copyright
+{
+    float: right;
+  width: 160px;
+
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
 }
